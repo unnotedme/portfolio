@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,199 @@
     <title>ted</title>
     <link rel="icon"
         href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/310/pushpin_1f4cc.png">
+    <link rel="stylesheet" href="assets\styles\style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    
+
+    <!-- header -->
+
+    <header>
+        <h1>ted</h1>
+        <ul id="navbar">
+            <li><a href="pages/home.html">home</a></li>
+            <li>/</li>
+            <li><a href="pages/tech.html">tech</a></li>
+            <li>/</li>            
+            <li><a href="pages/art.html">art</a></li>
+            <li>/</li>
+            <li><a href="pages/contact.html">contact</a></li>
+        </ul>
+    </header>
+
+    <!-- intro -->
+
+    <section id="intro">
+        <section id="intro-text">
+            <p>hi, i'm</p>
+            <h2>ted sá</h2>
+            <p>i'm a software engineer living in halifax, canada.</p>
+        </section>
+    </section>
+
+    <!-- stacks -->
+
+    <section id="stacks">
+        <section id="stacks-text">
+            <p>my stacks are:</p>
+            <ul id="stacks-list">
+                <li>java | javascript | html | css | dart</li>
+                <li>spring | react | flutter</li>
+                <li>aws | firebase</li>
+                <li>sql server | mysql | mongodb</li>
+                <li>git | github | gitlab</li>
+                <li>unit test | accesibility test | integration test</li>
+                <li>grafana | splunk | postman</li>
+            </ul>
+        </section>
+    </section>
+
+    <!-- links -->
+
+    <section id="links">
+        <section id="links-text">
+            <ul id="links-list">
+                <li>follow me on <a href=https://www.linkedin.com/in/unnotedme>linkedin</a></li>
+                <li>see my tech projects on <a href=https://github.com/unnotedme>github</a></li>
+                <li>see my art projects on <a href=https://behance.net/unnotedme>behance</a></li>
+                <li>read my articles on <a href=https://dev.to/unnotedme>dev.to</a></li>
+                <li>see me on <a href="https://www.instagram.com/unnotedme">instagram</a></li>
+                <li>watch me on <a href="https://www.twitch.tv/unnotedme">twitch</a></li>
+            </ul>
+        </section>
+    </section>
+
+    <!-- tech projects -->
+
+    <section id="tech-projects">
+        <section id="tech-projects-text">
+            <p>my recent tech projects:</p>
+            <ul id="tech-projects-list">
+                <li>
+                    <a href="https://github.com/unnotedme/docs">
+                        <h3>docs</h3>
+                        <p>in this project, i provide study materials produced by me and links to help you study programming.</p>
+                        <h4>html | css | javascript</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/unnotedme/basquiatbot">
+                        <h3>basquiatbot</h3>
+                        <p>the baquiatbot was created to interact with unnotedme's twitch followers. is based on one of ted's cats: basquiat, a very friendly tuxedo.</p>
+                        <h4>javascript</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/unnotedme/password-generator">
+                        <h3>password generator</h3>
+                        <p>this project allows you to generate random passwords.</p>
+                        <h4>python</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/unnotedme/auth">
+                        <h3>auth</h3>
+                        <p>auth is a full-stack project covering sign-up, sign-in, sign-out, and password reset.</p>
+                        <h4>react | firebase</h4>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </section>
+
+    <!-- art projects -->
+    <section id="art-projects">
+        <section id="art-projects-text">
+            <p>my recent art projects:</p>
+        </section>
+        <div class="gallery">
+            <div class="gallery__column">
+                <a href="https://unsplash.com/@jeka_fe" target="_blank" class="gallery__link">
+                    <figure class="gallery__thumb">
+                        <img src="https://source.unsplash.com/_cvwXhGqG-o/300x300" alt="Portrait by Ted Sá" class="gallery__image">
+                    </figure>
+                </a>
+        
+                <a href="https://unsplash.com/@oladimeg" target="_blank" class="gallery__link">
+                    <figure class="gallery__thumb">
+                        <img src="https://source.unsplash.com/AHBvAIVqk64/300x500" alt="Portrait by Ted Sá" class="gallery__image">
+                    </figure>
+                </a>
+        
+                <a href="https://unsplash.com/@a2eorigins" target="_blank" class="gallery__link">
+                    <figure class="gallery__thumb">
+                        <img src="https://source.unsplash.com/VLPLo-GtrIE/300x300" alt="Portrait by Ted Sá" class="gallery__image">
+                    </figure>
+                </a>
+            </div>
+            
+            <div class="gallery__column">
+                <a href="https://unsplash.com/@noahbuscher" target="_blank" class="gallery__link">
+                    <figure class="gallery__thumb">
+                        <img src="https://source.unsplash.com/AR7aumwKr2s/300x300" alt="Portrait by Ted Sá" class="gallery__image">
+                    </figure>
+                </a>
+                
+                <a href="https://unsplash.com/@von_co" target="_blank" class="gallery__link">
+                    <figure class="gallery__thumb">
+                        <img src="https://source.unsplash.com/dnL6ZIpht2s/300x300" alt="Portrait by Ted Sá" class="gallery__image">
+                    </figure>
+                </a>
+        
+                <a href="https://unsplash.com/@samburriss" target="_blank" class="gallery__link">
+                    <figure class="gallery__thumb">
+                        <img src="https://source.unsplash.com/tV_1sC603zA/300x500" alt="Portrait by Ted Sá" class="gallery__image">
+                    </figure>
+                </a>
+            </div>
+            
+            <div class="gallery__column">
+                <a href="https://unsplash.com/@marilezhava" target="_blank" class="gallery__link">
+                    <figure class="gallery__thumb">
+                        <img src="https://source.unsplash.com/Xm9-vA_bhm0/300x500" alt="Portrait by Ted Sá" class="gallery__image">
+                    </figure>
+                </a>
+                
+                <a href="https://unsplash.com/@ethanhaddox" target="_blank" class="gallery__link">
+                    <figure class="gallery__thumb">
+                        <img src="https://source.unsplash.com/NTjSR3zYpsY/300x300" alt="Portrait by Ted Sá" class="gallery__image">
+                    </figure>
+                </a>
+        
+                <a href="https://unsplash.com/@mr_geshani" target="_blank" class="gallery__link">
+                    <figure class="gallery__thumb">
+                        <img src="https://source.unsplash.com/2JH8d3ChNec/300x300" alt="Portrait by Ted Sá" class="gallery__image">
+                    </figure>
+                </a>
+            </div>
+            
+            <div class="gallery__column">
+                <a href="https://unsplash.com/@frxgui" target="_blank" class="gallery__link">
+                    <figure class="gallery__thumb">
+                        <img src="https://source.unsplash.com/FQhLLehm4dk/300x300" alt="Portrait by Ted Sá" class="gallery__image">
+                    </figure>
+                </a>
+        
+                <a href="https://unsplash.com/@majestical_jasmin" target="_blank" class="gallery__link">
+                    <figure class="gallery__thumb">
+                        <img src="https://source.unsplash.com/OQd9zONSx7s/300x300" alt="Portrait by Ted Sá" class="gallery__image">
+                    </figure>
+                </a>
+                
+                <a href="https://unsplash.com/@dimadallacqua" target="_blank" class="gallery__link">
+                    <figure class="gallery__thumb">
+                        <img src="https://source.unsplash.com/XZkEhowjx8k/300x500" alt="Portrait by Ted Sá" class="gallery__image">
+                    </figure>
+                </a>
+            </div>
+        </div>
+    </section>
+
 </body>
+
 </html>

@@ -1,0 +1,297 @@
+:root {
+    --background: #F5F5F5;
+    --white: #FFFFFF;
+    --pink: #F5DDDE;
+    --black: #202020;
+}
+
+* {
+    background-color: var(--background);
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    line-height: 1;
+    color: var(--black);
+    background-color: var(--background);
+}
+
+/* header */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 1.5rem 1.5rem 1.5rem;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--black);
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+#navbar li {
+    font-size: 1.2rem;
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+
+#navbar a {
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: none;
+    color: var(--black);
+}
+
+#navbar a:link {
+    text-decoration: none;
+    text-transform: none;
+    color: var(--black);
+}
+
+#navbar a:active {
+    text-decoration: none;
+    text-transform: none;
+    color: var(--black);
+}
+
+#navbar a:hover {
+    text-decoration: underline;
+    text-transform: none;
+    color: var(--black);
+}
+
+#navbar a:visited {
+    text-decoration: none;
+    text-transform: none;
+    color: var(--black);
+}
+
+/* intro */
+
+#intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5rem 0 1.5rem 2rem;
+}
+
+#intro-text {
+    margin: 0 0 0 1.5rem;
+}
+
+#intro h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--black);
+}
+
+#intro p {
+    font-weight: light;
+    color: var(--black);
+}
+
+/* stacks */
+
+#stacks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5rem 0 1.5rem 2rem;
+}
+
+#stacks-text {
+    margin: 0 0 0 1.5rem;
+}
+
+#stacks p {
+    font-weight: light;
+    color: var(--black);
+}
+
+#stacks ul {
+    list-style-type: none;
+}	
+
+#stacks li {
+    font-weight: bold;
+}
+
+/* links */
+
+#links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5rem 0 1.5rem 2rem;
+}
+
+#links-text {
+    margin: 0 0 0 1.5rem;
+}
+
+#links li {
+    display: flex;
+    flex-direction: row;
+}
+
+#links a {
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: none;
+    color: var(--black);
+    margin: 0 0 0 0.5rem;
+}
+
+#links a:link {
+    text-decoration: none;
+    text-transform: none;
+    color: var(--black);
+}
+
+#links a:active {
+    text-decoration: none;
+    text-transform: none;
+    color: var(--black);
+}
+
+#links a:hover {
+    text-decoration: underline;
+    text-transform: none;
+    color: var(--black);
+}
+
+#links a:visited {
+    text-decoration: none;
+    text-transform: none;
+    color: var(--black);
+}
+
+/* tech-projects */
+
+#tech-projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5rem 0 1.5rem 2rem;
+}
+
+#tech-projects-text {
+    margin: 0 0 0 1.5rem;
+}
+
+#tech-projects li {
+    display: flex;
+    flex-direction: row;
+}
+
+#tech-projects a {
+    font-weight: normal;
+    text-decoration: none;
+    text-transform: none;
+    color: var(--black);
+    margin: 0 0 0 0.5rem;
+}
+
+#tech-projects a:link {
+    text-decoration: none;
+    text-transform: none;
+    color: var(--black);
+}
+
+#tech-projects a:active {
+    text-decoration: none;
+    text-transform: none;
+    color: var(--black);
+}
+
+#tech-projects a:hover {
+    text-decoration: underline;
+    text-transform: none;
+    color: var(--black);
+}
+
+#tech-projects a:visited {
+    text-decoration: none;
+    text-transform: none;
+    color: var(--black);
+}
+
+/* art-projects */
+
+#art-projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5rem 0 1.5rem 2rem;
+}
+
+#art-projects-text {
+    margin: 0 0 0 1.5rem;
+    align-self: start;
+}
+
+.gallery {
+    display: flex;
+    padding: 2px;
+    transition: 0.3s;
+}
+
+.gallery:hover .gallery__image {
+    filter: grayscale(1);
+}
+
+.gallery__column {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.gallery__link {
+    margin: 2px;
+    overflow: hidden;
+}
+
+.gallery__link:hover .gallery__image {
+    filter: grayscale(0);
+}
+
+.gallery__link:hover .gallery__caption {
+    opacity: 1;
+}
+
+.gallery__thumb {
+    position: relative;
+}
+
+.gallery__image {
+    display: block;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.gallery__image:hover {
+    transform: scale(1.1);
+}
